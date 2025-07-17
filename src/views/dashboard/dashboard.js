@@ -134,7 +134,7 @@ export default function Dashboard() {
                     fontWeight="bold"
                     color={textColor}
                   >
-                    Hello Everyone!! 🙋🏻‍♂️
+                    Hello Everyone!! 🙋🏻‍♀
                   </Text>
 
                   <Text
@@ -145,7 +145,7 @@ export default function Dashboard() {
                   >
                     This is{" "}
                     <Text display="inline-flex" color={highlightTextColor}>
-                      Rahul Kumar Patro
+                      Shruti Basarikatti
                     </Text>
                   </Text>
                   <Text

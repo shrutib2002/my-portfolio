@@ -49,7 +49,7 @@ export default function Footer() {
       >
         {" "}
         &copy; {1900 + new Date().getYear()}
-        {"</>"} with <AiFillHeart /> by Rahul Kumar Patro • All Rights Reserved
+        {"</>"}  by Shruti Basarikatti <AiFillHeart />
       </Text>
       <List display="flex">
         <ListItem
@@ -60,10 +60,11 @@ export default function Footer() {
           opacity="0.6"
           _hover={{ opacity: 1 }}
         >
-          <Link href="https://github.com/Rahul1582" target="blank">
+          <Link href="https://github.com/shrutib2002" target="blank">
             <AiFillGithub />
           </Link>
         </ListItem>
+       
         <ListItem
           me={{
             base: "20px",
@@ -72,19 +73,7 @@ export default function Footer() {
           opacity="0.6"
           _hover={{ opacity: 1 }}
         >
-          <Link href="https://leetcode.com/rahul158_/" target="blank">
-            <SiLeetcode />
-          </Link>
-        </ListItem>
-        <ListItem
-          me={{
-            base: "20px",
-            md: "40px"
-          }}
-          opacity="0.6"
-          _hover={{ opacity: 1 }}
-        >
-          <Link href="https://www.linkedin.com/in/rahulkp15/" target="blank">
+          <Link href="https://www.linkedin.com/in/shruti-basarikatti-161549297" target="blank">
             <BiLogoLinkedin />
           </Link>
         </ListItem>
@@ -96,7 +85,7 @@ export default function Footer() {
           opacity="0.6"
           _hover={{ opacity: 1 }}
         >
-          <Link href="https://www.instagram.com/_rahul_patro_/" target="blank">
+          <Link href="https://www.instagram.com/shruti_b_19?igsh=MThicWt5aHZnbDVjaA==" target="blank">
             <BsInstagram />
           </Link>
         </ListItem>

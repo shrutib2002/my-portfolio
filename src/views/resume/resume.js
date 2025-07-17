@@ -20,7 +20,7 @@ export default function Resume() {
 
   const handleDownload = () => {
     window.location.href =
-      "https://drive.google.com/uc?export=download&id=1vAJPgdS7Ka94EdaV3rcTqOk1Ky01_9jC";
+      "https://drive.usercontent.google.com/u/0/uc?id=15P6yh2S1egLOUE1YYzSM8CS9eYzr9GPj&export=download";
   };
 
   return (
@@ -36,7 +36,7 @@ export default function Resume() {
             borderRadius="md"
           >
             <iframe
-              src="https://drive.google.com/file/d/1vAJPgdS7Ka94EdaV3rcTqOk1Ky01_9jC/preview"
+              src="https://drive.google.com/file/d/15P6yh2S1egLOUE1YYzSM8CS9eYzr9GPj/preview"
               title="Resume"
               width="100%"
               height="100%"

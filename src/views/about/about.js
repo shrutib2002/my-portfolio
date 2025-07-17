@@ -40,8 +40,12 @@ import postgres from "../../assets/icons/postgres.png";
 import rxjs from "../../assets/icons/rxjs.png";
 import azure from "../../assets/icons/azure.png";
 import bootstrap from "../../assets/icons/bootstrap.png";
-import myphoto from "../../assets/aboutMePhoto.jpg";
+import figma from "../../assets/icons/figma-logo.png";
+
+import myphoto from "../../assets/shruti.jpg";
 import GitHubCalendar from "react-github-calendar";
+import { HiOutlinePaintBrush } from "react-icons/hi2";
+import { PiPlantDuotone } from "react-icons/pi";
 
 export default function About() {
   const [loadedProfileimg, setloadedProfileimg] = useState(false);
@@ -142,35 +146,26 @@ export default function About() {
                   {"<GENERAL INFORMATION/>"}
                 </Text>
                 <SimpleGrid columns="2" gap="20px">
-                  <AboutMeInfo
-                    boxShadow={cardShadow}
-                    title="Current Organization"
-                    value="Truminds Software Systems"
-                  />
-                  <AboutMeInfo
-                    boxShadow={cardShadow}
-                    title="Designation"
-                    value="Software Development Engineer - 1"
-                  />
+                  
                   <AboutMeInfo
                     boxShadow={cardShadow}
                     title="Location"
-                    value="Bengaluru, Karnataka"
+                    value="Belgaum, Karnataka"
                   />
                   <AboutMeInfo
                     boxShadow={cardShadow}
                     title="Education"
-                    value="BIT Mesra, Ranchi"
+                    value="SGBIT, Belgaum"
                   />
                   <AboutMeInfo
                     boxShadow={cardShadow}
                     title="Degree"
-                    value="Masters"
+                    value="Bachelors"
                   />
                   <AboutMeInfo
                     boxShadow={cardShadow}
                     title="Languages"
-                    value="English, Hindi, Odia"
+                    value="English, Hindi, Marathi, Kannada"
                   />
                 </SimpleGrid>
               </Box>
@@ -195,24 +190,25 @@ export default function About() {
           align={{ base: "center", xl: "center" }}
           justify={{ base: "center", xl: "center" }}
         >
-          <TechStackCard imagepath={angular} />
+          
           <TechStackCard imagepath={react} />
           <TechStackCard imagepath={js} />
-          <TechStackCard imagepath={typescript} />
+          
           <TechStackCard imagepath={redux} background="white" />
-          <TechStackCard imagepath={rxjs} background="white" />
-          <TechStackCard imagepath={cpp} />
+          
+         
           <TechStackCard imagepath={node} />
           <TechStackCard imagepath={mongo} />
-          <TechStackCard imagepath={postgres} />
+          
           <TechStackCard imagepath={express} background="white" />
           <TechStackCard imagepath={git} />
-          <TechStackCard imagepath={gitlab} />
+          
           <TechStackCard imagepath={firebase} />
           <TechStackCard imagepath={html} />
           <TechStackCard imagepath={css} />
           <TechStackCard imagepath={bootstrap} />
-          <TechStackCard imagepath={azure} />
+          <TechStackCard imagepath={figma} />
+          
         </SimpleGrid>
 
         <Flex
@@ -228,7 +224,7 @@ export default function About() {
         </Flex>
         <Box display="flex" justifyContent="center" alignItems="center">
           <GitHubCalendar
-            username="rahul1582"
+            username="shrutib2002"
             colorScheme={colorMode === "light" ? "light" : "dark"}
             year="last"
           />
@@ -240,20 +236,11 @@ export default function About() {
             color="white"
             fadeDuration={1}
           >
-            <LazyLoadImage
-              src={
-                colorMode === "light"
-                  ? "https://github-readme-streak-stats.herokuapp.com?user=Rahul1582&theme=whatsapp-light&hide_border=true&border_radius=5.8&date_format=j%20M%5B%20Y%5D"
-                  : "https://github-readme-streak-stats.herokuapp.com?user=Rahul1582&theme=calm-pink&hide_border=true&border_radius=5.8&date_format=j%20M%5B%20Y%5D"
-              }
-              alt="GitHub Streak"
-              effect="blur"
-              onLoad={() => setloadedgithubimg(true)}
-            />
+            
           </Skeleton>
         </Flex>
         <Flex justifyContent="center" alignItems="center" mt="20px">
-          <Link href="https://github.com/Rahul1582" target="blank">
+          <Link href="https://github.com/shrutib2002" target="blank">
             <Button variant="darkBrand" fontSize="sm" fontFamily="DM Sans">
               Visit Github
             </Button>
@@ -299,41 +286,29 @@ export default function About() {
           <Box __css={styles}>
             <Box textAlign="center">
               <Icon
-                as={LiaDrumSolid}
+                as={HiOutlinePaintBrush}
                 width="30px"
                 height="30px"
                 color="inherit"
               />
             </Box>
-            <Text textAlign="center">Playing Drums</Text>
+            <Text textAlign="center">Drawing</Text>
             <Text color={textColorPrimary} textAlign="center" mt="5px">
-              I have a deep passion for playing the drums, which has been a
-              cherished hobby of mine for many years. The rhythmic beats and the
-              feeling of being in sync with the music provide me with a sense of
-              joy and creative expression that is truly unparalleled. Whether
-              it's jamming with friends, exploring new techniques, or simply
-              drumming to my favorite tunes, I find immense fulfillment and
-              relaxation in this musical pursuit!!
+             I have a deep passion for drawing, which has been a cherished creative outlet for me over the years. Bringing ideas to life on paper through sketches and colors allows me to express thoughts and emotions in ways words often can’t. Whether it's experimenting with new styles, illustrating imaginative scenes, or simply doodling for fun, drawing offers me a sense of peace, focus, and artistic satisfaction that I truly value.
             </Text>
           </Box>
           <Box __css={styles}>
             <Box textAlign="center">
               <Icon
-                as={GiCricketBat}
+                as={PiPlantDuotone}
                 width="30px"
                 height="30px"
                 color="inherit"
               />
             </Box>
-            <Text textAlign="center">Playing Outdoor Games</Text>
+            <Text textAlign="center">Gardening</Text>
             <Text color={textColorPrimary} textAlign="center" mt="5px">
-              Whether it's a competitive game of soccer, a relaxing round of
-              golf, or simply throwing a frisbee in the park, I find immense joy
-              and fulfillment in the great outdoors. Playing sports not only
-              keeps me physically active but also fosters teamwork, leadership,
-              and a strong sense of camaraderie. It's a wonderful way for me to
-              unwind, stay fit, and connect with friends and family while
-              enjoying the beauty of nature!!
+              Gardening has been a fulfilling and calming hobby that connects me deeply with nature. The process of nurturing plants, watching them grow, and transforming spaces into green sanctuaries brings me immense joy and a sense of accomplishment. Whether it’s tending to flowers, growing herbs, or simply enjoying the quiet moments outdoors, gardening offers me relaxation, mindfulness, and a refreshing escape from the digital world.
             </Text>
           </Box>
         </SimpleGrid>

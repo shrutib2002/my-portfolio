@@ -162,7 +162,7 @@ export default function ProjectCard(props) {
               px="24px"
               py="5px"
             >
-              {techStack ? "View Project" : "View Blog"}
+              {techStack ? "View Project" : "View"}
             </Button>
           </Link>
         </Flex>
