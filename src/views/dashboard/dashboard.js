@@ -156,7 +156,7 @@ export default function Dashboard() {
                   >
                     I am a{" "}
                     <Text display="inline-flex" color={highlightTextColor}>
-                      Software Developer
+                     Frontend Developer |UI/UX Designer
                     </Text>
                   </Text>
                 </Box>

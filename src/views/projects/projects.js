@@ -64,6 +64,7 @@ export default function Projects() {
             projectName={"Threat Guard AI"}
             aboutProject={"Multi-Domain Fraud Detection System"}
             techStack={"Python, Streamlit, Flask, MongoDB, Scikit-learn, OpenCV, Joblib, Firebase"}
+            projectLiveLink=" https://lnkd.in/gczWRvMM"
             projectLink="https://github.com/Rohan1786/Fraud-Detector"
             
           />
